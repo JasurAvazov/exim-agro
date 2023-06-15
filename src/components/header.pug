@@ -1,4 +1,21 @@
 mixin header()
     header.header 
         .header__nav.container 
-            p header
+            a(href="#").header__nav-logo 
+                img(src="@img/logo.png", alt="" draggable="false")
+            ul.header__nav-links
+                li
+                    a(href="#") Каталог
+                li
+                    a(href="#") О компании
+                li
+                    a(href="#") Преимущества
+            .header__nav-side 
+                a(href="tel:+998909881122").header__nav-number 
+                    img(src="@img/phone.svg", alt="")
+                    p +998909881122
+                a(href="#").header__nav-social 
+                    img(src="@img/whatsapp.png", alt="")
+                .header__nav__lang 
+                    button(type="button").header__nav__lang-btn en
+                    button(type="button").header__nav__lang-btn.active ru

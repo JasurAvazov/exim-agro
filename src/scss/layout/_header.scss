@@ -1,1 +1,75 @@
-// Шапка
+.header{
+    background-color: #03262c;
+    .container{
+        padding: 18px 15px;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-logo{
+            max-width: 204px;
+        }
+        &-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 48px;
+            a{
+                color: white;
+                transition: .3s color;
+                &:hover{
+                    color: #5fd577;
+                }
+            }
+        }
+        &-side{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        &-number{
+            padding: 14px 18px;
+            color: white;
+            background-color: #5fd577;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            border-radius: 24px;
+        }
+        &-social{
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 28px;
+                height: 28px;
+                position: relative;
+                top: 2px;
+            }
+        }
+        &__lang{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+            &-btn{
+                width: 35px;
+                height: 35px;
+                border-radius: 8px;
+                color: white;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                text-transform: uppercase;
+                &.active{
+                    background-color: #5fd577;
+                }
+            }
+        }
+    }
+}
