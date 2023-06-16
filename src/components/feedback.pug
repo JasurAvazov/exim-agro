@@ -1,3 +1,11 @@
 mixin feedback()
     section.feedback
         .container
+            h2.feedback-title Обратная связь
+            h3.feedback-subtitle Надеемся на дальнейшее плодотворное сотрудничество и искренне желаем процветания Вашей фирме!
+            form(action="#" method="POST")
+                input(type="text" name="name" placeholder="Ваше имя" required)#name
+                input(type="tel" name="tel" placeholder="Номер телефона" required)#tel
+                input(type="email" name="email" placeholder="Email" required)#email
+                input(type="submit" value="Отправить")
+                textarea(name="message" rows="4" placeholder="Комментарий" cols="50" required)#message

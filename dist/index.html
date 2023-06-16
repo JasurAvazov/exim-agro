@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230616210432">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230617002239">
     <title>EximAgro</title>
   </head>
   <body> 
@@ -16,7 +16,7 @@
           <li><a href="#">Преимущества</a></li>
         </ul>
         <div class="header__nav-side"> <a class="header__nav-number" href="tel:+998909881122"> <img src="img/phone.svg" alt="" draggable="false"/>
-            <p>+998909881122</p></a><a class="header__nav-social" href="#"> <picture><source srcset="img/whatsapp.webp" type="image/webp"><img src="img/whatsapp.png" alt="" draggable="false"/></picture></a>
+            <p>+998909881122</p></a><a class="header__nav-social" href="#"> <picture><source srcset="img/icons/whatsapp.webp" type="image/webp"><img src="img/icons/whatsapp.png" alt="" draggable="false"/></picture></a>
           <div class="header__nav__lang"> 
             <button class="header__nav__lang-btn" type="button">en</button>
             <button class="header__nav__lang-btn active" type="button">ru</button>
@@ -252,13 +252,37 @@
       </div>
     </section>
     <section class="feedback">
-      <div class="container"></div>
+      <div class="container">
+        <h2 class="feedback-title">Обратная связь</h2>
+        <h3 class="feedback-subtitle">Надеемся на дальнейшее плодотворное сотрудничество и искренне желаем процветания Вашей фирме!</h3>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Ваше имя" required="required" id="name"/>
+          <input type="tel" name="tel" placeholder="Номер телефона" required="required" id="tel"/>
+          <input type="email" name="email" placeholder="Email" required="required" id="email"/>
+          <input type="submit" value="Отправить"/>
+          <textarea name="message" rows="4" placeholder="Комментарий" cols="50" required="required" id="message"></textarea>
+        </form>
+      </div>
     </section>
     <footer class="footer">  
-      <div class="footer__body container"> 
-        <p>footer </p>
+      <div class="container"> 
+        <div class="footer__left"><img src="img/logo2.svg" alt="" draggable="false"/>
+          <p class="footer-copyright">Copyright © 2017 - 2023 ООО "EXIM AGRO GROUP"</p>
+        </div>
+        <div class="footer__right">
+          <div class="footer__socials"><a class="footer__socials-link" href="#"><picture><source srcset="img/icons/instagram.webp" type="image/webp"><img src="img/icons/instagram.png" alt="" draggable="false"/></picture></a><a class="footer__socials-link" href="#"><picture><source srcset="img/icons/telegram.webp" type="image/webp"><img src="img/icons/telegram.png" alt="" draggable="false"/></picture></a><a class="footer__socials-link" href="#"><picture><source srcset="img/icons/facebook.webp" type="image/webp"><img src="img/icons/facebook.png" alt="" draggable="false"/></picture></a><a class="footer__socials-link" href="#"><picture><source srcset="img/icons/whatsapp.webp" type="image/webp"><img src="img/icons/whatsapp.png" alt="" draggable="false"/></picture></a><a class="footer__socials-link" href="#"><img src="img/icons/vk.svg" alt="" draggable="false"/></a><a class="footer__socials-link" href="#"><picture><source srcset="img/icons/linkedin.webp" type="image/webp"><img src="img/icons/linkedin.png" alt="" draggable="false"/></picture></a></div>
+          <div class="footer__contacts"> 
+            <ul> 
+              <li> <img src="img/icons/phone.svg" alt=""/><a href="tel:+998909881122">+998909881122</a><a href="tel:+998909881122">+998909881122</a></li>
+              <li> <img src="img/icons/mail.svg" alt=""/><a href="mailto:info@eximagro.uz">info@eximagro.uz</a></li>
+              <li> <img src="img/icons/location.svg" alt=""/>
+                <p>Республика Узбекистан, Ферганская область, Кувинский район, ул. Каттакишлок, 167</p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
-    <script src="js/app.min.js?_v=20230616210432"> </script>
+    <script src="js/app.min.js?_v=20230617002239"> </script>
   </body>
 </html>

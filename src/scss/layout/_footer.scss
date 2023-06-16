@@ -1,1 +1,72 @@
-// Футер
+.footer{
+    background-color: #03262c;
+    .container{
+        padding: 70px 15px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-copyright{
+        font-weight: 300;
+        font-size: 13.987px;
+        line-height: 17px;
+        color: #fff;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+        img{
+            width: 300px;
+            margin-bottom: 26px;
+        }
+    }
+    &__right{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__socials{
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 16px ;
+        &-link{
+            width: calc(50% - 8px);
+            img{
+                width: 32px;
+                height: 32px;
+                transition: .3s transform;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    &__contacts{
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+        li{
+            max-width: 500px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            p,a{
+                color: #fff;
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 16.011px;
+                line-height: 19px;
+            }
+        }
+    }
+}
