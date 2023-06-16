@@ -18,10 +18,16 @@
     'base/reset',
     'base/typography';
 
+// swiper
+@import
+    '../../node_modules/swiper/swiper.scss',
+    '../../node_modules/swiper/modules/autoplay/autoplay.scss';
+
 // layout
 @import 
     'layout/header',
     'layout/intro',
+    'layout/about',
     'layout/footer';
 
 // components

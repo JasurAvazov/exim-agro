@@ -1,0 +1,32 @@
+.about{
+    .container{
+        padding: 105px 15px;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        margin-bottom: 38px;
+    }
+    &-text{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 144%;
+        text-align: center;
+        color: #1e1e1e;
+        margin-bottom: 28px;
+    }
+    .swiper{
+        &-wrapper{
+            display: flex;
+            align-items: center;
+        }
+        &-slide{
+            width: 301.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

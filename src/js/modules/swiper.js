@@ -1,5 +1,13 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Autoplay } from 'swiper';
 
-export function init() {
-    const swiper = new Swiper();
-}
+const swiper = new Swiper('.about-swiper', {
+    modules: [Autoplay],
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    speed: 600,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+});
