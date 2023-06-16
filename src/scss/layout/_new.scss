@@ -1,0 +1,51 @@
+.new{
+    .container{
+        padding: 15px 15px 150px;
+    }
+    &-path{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: hidden;
+        margin-bottom: 16px;
+        li{
+            display: flex;
+            &::after{
+                content: '/';
+                margin: 0 8px;
+            }
+            &:last-child{
+                &::after{
+                    content: '';
+                }
+            }
+            a{
+                color: #5fd577;
+            }
+            p{
+                color: #6c757d;
+            }
+        }
+    }
+    &-title{
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 1.75rem;
+    }
+    &-date{
+        color: #999;
+        margin-bottom: 16px;
+        font-weight: 500;
+    }
+    img{
+        width: 100%;
+        aspect-ratio: 21/9;
+        object-fit: cover;
+        margin-bottom: 24px;
+    }
+    &-text{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
