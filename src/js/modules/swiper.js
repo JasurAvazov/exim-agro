@@ -22,4 +22,8 @@ export function init() {
             prevEl: '.swiper-button-prev',
         },
 	});
+    const news = new Swiper(".news-swiper", {
+		slidesPerView: 3,
+		speed: 600,
+	});
 }

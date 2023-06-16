@@ -741,7 +741,6 @@
 }
 
 .catalog__wrapper {
-  width: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -750,13 +749,23 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  display: none;
-}
-
-.catalog__wrapper.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
+}
+
+.catalog__wrapper.active {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
 }
 
 .catalog__wrapper-card {
@@ -845,6 +854,7 @@
   width: 200px;
   height: 44px;
   position: relative;
+  margin-right: 100px;
 }
 
 .advantages .swiper-button-next,
@@ -894,6 +904,85 @@
   text-align: center;
   color: #999;
   margin-top: 14px;
+}
+
+.news .container {
+  position: relative;
+  padding: 0 15px 60px;
+}
+
+.news-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #1e1e1e;
+  margin-bottom: 60px;
+}
+
+.news .swiper-slide {
+  padding: 0 10px;
+}
+
+.news__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.news__card-img {
+  width: 100%;
+  height: 220px;
+}
+
+.news__card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.news__card-date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.75rem;
+}
+
+.news__card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.news__card-next {
+  font-size: 1rem;
+  color: #5fd577;
+}
+
+.news-btn {
+  color: #fff;
+  background-color: #5fd577;
+  padding: 0.5rem 1rem;
+  border: 1px solid #5fd577;
+  border-radius: 0.5rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: 0.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 * {
