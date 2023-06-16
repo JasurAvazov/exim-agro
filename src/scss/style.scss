@@ -21,6 +21,7 @@
 // swiper
 @import
     '../../node_modules/swiper/swiper.scss',
+    '../../node_modules/swiper/modules/navigation/navigation.scss',
     '../../node_modules/swiper/modules/autoplay/autoplay.scss';
 
 // layout
@@ -28,6 +29,8 @@
     'layout/header',
     'layout/intro',
     'layout/about',
+    'layout/catalog',
+    'layout/advantages',
     'layout/footer';
 
 // components
