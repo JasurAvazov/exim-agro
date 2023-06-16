@@ -18,8 +18,8 @@ export function init() {
 		spaceBetween: 30,
 		speed: 600,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.advantages-button-next',
+            prevEl: '.advantages-button-prev',
         },
 	});
     const news = new Swiper(".news-swiper", {
@@ -27,14 +27,28 @@ export function init() {
 		speed: 600,
 	});
     const gallery = new Swiper(".gallery-swiper", {
-		modules: [Navigation],
+		modules: [Navigation, Autoplay],
 		slidesPerView: 4,
         spaceBetween: 30,
 		speed: 600,
         loop: true,
+        autoplay: {
+			delay: 2000,
+			disableOnInteraction: false,
+		},
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+	});
+    const certificates = new Swiper(".certificates-swiper", {
+		modules: [Navigation],
+		slidesPerView: 5,
+		spaceBetween: 30,
+		speed: 600,
+        navigation: {
+            nextEl: '.certificates-button-next',
+            prevEl: '.certificates-button-prev',
         },
 	});
 }
