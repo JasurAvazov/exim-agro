@@ -1,4 +1,5 @@
 include components/header
+include components/intro
 include components/main
 include components/footer
 
@@ -11,7 +12,8 @@ html(lang="en")
         link(rel="stylesheet" href="css/style.min.css")
         title EximAgro
     body 
-        +header  
+        +header
+        +intro
         +main  
         +footer
         script(src="js/app.min.js") 
