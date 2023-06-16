@@ -26,4 +26,15 @@ export function init() {
 		slidesPerView: 3,
 		speed: 600,
 	});
+    const gallery = new Swiper(".gallery-swiper", {
+		modules: [Navigation],
+		slidesPerView: 4,
+        spaceBetween: 30,
+		speed: 600,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+	});
 }
