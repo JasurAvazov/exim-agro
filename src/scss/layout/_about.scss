@@ -2,6 +2,12 @@
     background-color: #fffcf3;
     .container{
         padding: 105px 15px;
+        @include media (992) {
+            padding: 60px 15px;
+        }
+        @include media (576) {
+            padding: 60px 15px 40px;
+        }
     }
     &-title{
         font-weight: 700;

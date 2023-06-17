@@ -1,51 +1,76 @@
-.intro{
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    &-bg{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-    .container{
-        position: relative;
-    }
-    &-title{
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 72px;
-        color: #1e1e1e;
-        margin-bottom: 12px;
-        max-width: 600px;
-    }
-    &-subtitle{
-        font-size: 21px;
-        line-height: 22px;
-        font-weight: 500;
-        color: dimgray;
-        margin-bottom: 60px;
-    }
-    &-btn{
-        text-decoration: none;
-        padding: 20px 40px;
-        background-color: #03262c;
-        color: #fff;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-        border: none;
-        border-radius: 32px;
-        filter: drop-shadow(0 12px 20px rgba(95,213,119,.251));
-        transition: .3s all;
-        &:hover{
-            filter: drop-shadow(0 12px 10px rgba(56, 122, 70, 0.507));
-        }
-    }
+.intro {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	&-bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: left;
+		}
+	}
+	.container {
+		position: relative;
+	}
+	&-title {
+		font-size: 60px;
+		font-weight: 700;
+		line-height: 72px;
+		color: #1e1e1e;
+		margin-bottom: 12px;
+		max-width: 600px;
+		@include media(992) {
+            font-size: 50px;
+		}
+		@include media(576) {
+            font-size: 44px;
+            max-width: 450px;
+            line-height: 45px;
+		}
+		@include media(480) {
+            font-size: 36px;
+            max-width: 450px;
+            line-height: 45px;
+		}
+		@include media(400) {
+            font-size: 30px;
+            max-width: 300px;
+            line-height: 35px;
+		}
+	}
+	&-subtitle {
+		font-size: 21px;
+		line-height: 22px;
+		font-weight: 500;
+		color: dimgray;
+		margin-bottom: 60px;
+		@include media(992) {
+            font-size: 20px;
+		}
+        @include media(480) {
+            font-size: 16px;
+		}
+	}
+	&-btn {
+		text-decoration: none;
+		padding: 20px 40px;
+		background-color: #03262c;
+		color: #fff;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+		border: none;
+		border-radius: 32px;
+		filter: drop-shadow(0 12px 20px rgba(95, 213, 119, 0.251));
+		transition: 0.3s all;
+		&:hover {
+			filter: drop-shadow(0 12px 10px rgba(56, 122, 70, 0.507));
+		}
+	}
 }

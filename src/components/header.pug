@@ -5,9 +5,9 @@ mixin header()
                 img(src="@img/logo.png" alt="" draggable="false")
             ul.header__nav-links
                 li
-                    a(href="index.html#catalog") Каталог
-                li
                     a(href="index.html#about") О компании
+                li
+                    a(href="index.html#catalog") Каталог
                 li
                     a(href="index.html#advantages") Преимущества
             .header__nav-side 
@@ -19,3 +19,29 @@ mixin header()
                 .header__nav__lang 
                     button(type="button").header__nav__lang-btn en
                     button(type="button").header__nav__lang-btn.active ru
+            button(type="button").header-burger.menu-toggle
+                span 
+                span 
+                span
+    .menu
+        .menu-bg.menu-toggle
+        .menu__inner
+            a(href="index.html").menu-logo 
+                img(src="@img/logo.png" alt="" draggable="false")
+            ul.menu-links
+                li
+                    a(href="index.html#about").menu-toggle О компании
+                li
+                    a(href="index.html#catalog").menu-toggle Каталог
+                li
+                    a(href="index.html#advantages").menu-toggle Преимущества
+            .menu-side 
+                a(href="tel:+998909881122").menu-number 
+                    img(src="@img/phone.svg" alt="" draggable="false")
+                    p +998909881122
+                .menu__lang 
+                    button(type="button").menu__lang-btn en
+                    button(type="button").menu__lang-btn.active ru
+            button(type="button").menu-burger.menu-toggle
+                span 
+                span

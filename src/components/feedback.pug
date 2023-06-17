@@ -7,5 +7,6 @@ mixin feedback()
                 input(type="text" name="name" placeholder="Ваше имя" required)#name
                 input(type="tel" name="tel" placeholder="Номер телефона" required)#tel
                 input(type="email" name="email" placeholder="Email" required)#email
-                input(type="submit" value="Отправить")
+                input(type="submit" value="Отправить").feedback-desktop
                 textarea(name="message" rows="4" placeholder="Комментарий" cols="50" required)#message
+                input(type="submit" value="Отправить").feedback-mobile

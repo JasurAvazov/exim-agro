@@ -5,9 +5,15 @@
     &-path{
         display: flex;
         justify-content: flex-start;
-        align-items: center;
-        overflow-x: hidden;
+        align-items: flex-start;
         margin-bottom: 16px;
+        flex-wrap: wrap;
+        @include media (992){
+			font-size: 14px;
+        }
+        @include media (768){
+			font-size: 12px;
+        }
         li{
             display: flex;
             &::after{
@@ -32,11 +38,23 @@
         font-weight: 500;
         line-height: 1.2;
         font-size: 1.75rem;
+        @include media (992){
+			font-size: 20px;
+        }
+        @include media (768){
+			font-size: 18px;
+        }
     }
     &-date{
         color: #999;
         margin-bottom: 16px;
         font-weight: 500;
+        @include media (992){
+			font-size: 14px;
+        }
+        @include media (768){
+			font-size: 14px;
+        }
     }
     img{
         width: 100%;
@@ -47,5 +65,11 @@
     &-text{
         font-size: 1.1rem;
         font-weight: 500;
+        @include media (992){
+			font-size: 16px;
+        }
+        @include media (768){
+			font-size: 14px;
+        }
     }
 }

@@ -16,11 +16,18 @@
         flex-direction: column;
         align-items: flex-end;
         gap: 30px;
+        @include media (992) {
+            gap: 30px;
+        }
         &-button{
             width: 200px;
             height: 44px;
             position: relative;
             margin-right: 100px;
+            @include media (992) {
+                margin-right: 50px;
+                width: 150px;
+            }
             &-next,&-prev{
                 color: #5fd577;
             }

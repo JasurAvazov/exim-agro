@@ -25,6 +25,9 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 30px;
+        @include media (768) {
+            gap: 20px;
+        }
     }
     input{
         background-color: #f8f8f8;
@@ -38,6 +41,15 @@
         color: #212529;
         height: 60px;
         width: calc(100% / 3 - 110px);
+        @include media (1200){
+            width: calc(100% / 3 - 85px);
+        }
+        @include media (992) {
+            width: calc(100% / 3 - 20px);
+        }
+        @include media (768) {
+            width: 100%;
+        }
     }
     input[type=submit]{
         background-color: #03262c;
@@ -62,5 +74,18 @@
         border: none;
         border-radius: 32px;
         padding: 0.5rem 1.5rem;
+    }
+    &-desktop{
+        display: block !important;
+        @include media (992) {
+            display: none !important;
+        }
+    }
+    &-mobile{
+        display: none !important;
+        @include media (992) {
+            display: block !important;
+            margin: auto;
+        }
     }
 }

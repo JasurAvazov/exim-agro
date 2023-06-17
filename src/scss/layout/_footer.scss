@@ -1,16 +1,33 @@
 .footer{
     background-color: #03262c;
+    @include media (992){
+        padding-bottom: 40px;
+    }
     .container{
         padding: 70px 15px 60px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        position: relative;
+        @include media (992){
+            padding: 70px 15px;
+        }
+        @include media (768){
+            gap: 40px;
+        }
+        @include media (576){
+            flex-direction: column;
+        }
     }
     &-copyright{
         font-weight: 300;
         font-size: 13.987px;
         line-height: 17px;
         color: #fff;
+        @include media (576){
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
     &__left{
         display: flex;
@@ -21,6 +38,9 @@
         img{
             width: 300px;
             margin-bottom: 26px;
+            @include media (768){
+                width: 200px;
+            }
         }
     }
     &__right{
@@ -34,9 +54,27 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 16px ;
+        gap: 16px;
+        @include media (1200){
+            width: 120px;
+        }
+        @include media (992){
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        @include media (400){
+            gap: 20px;
+        }
         &-link{
             width: calc(50% - 8px);
+            @include media (992){
+                width: 32px;
+            }
             img{
                 width: 32px;
                 height: 32px;
@@ -60,12 +98,21 @@
             display: flex;
             align-items: flex-start;
             gap: 8px;
+            @include media(1200){
+                max-width: 300px;
+            }
             p,a{
                 color: #fff;
                 text-decoration: none;
                 font-weight: 300;
                 font-size: 16.011px;
                 line-height: 19px;
+                @include media (768){
+                    font-size: 14px;
+                }
+                @include media (576){
+                    font-size: 16px;
+                }
             }
         }
     }
