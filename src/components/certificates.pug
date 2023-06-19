@@ -2,6 +2,11 @@ mixin certificates()
     section.certificates
         .container
             h2.certificates-title Сертификаты
+            .certificates__modal
+                .certificates__modal-bg.certificates__modal-toggle
+                .certificates__modal__inner
+                    .certificates__modal-img 
+                        img(src="" alt="" draggable="false")
             .swiper.certificates-swiper 
                 .swiper-wrapper 
                     .swiper-slide.certificates__card

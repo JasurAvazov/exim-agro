@@ -17,4 +17,5 @@ functions.isWebp();
 swiper.init();
 wrapper.init();
 burger.init();
-modal.init();
+modal.catalog();
+modal.certificates();

@@ -45,6 +45,48 @@
         align-items: center;
         &-img{
             width: 257px;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    &__modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        z-index: 160;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        &.active{
+            display: flex;
+        }
+        &-bg{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: .5;
+            backdrop-filter: blur(2px);
+            position: absolute;
+        }
+        &__inner{
+            position: relative;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            border-radius: 8px;
+        }
+        &-img{
+            width: 257px;
+            border-radius: 8px;
             img{
                 width: 100%;
                 height: 100%;
