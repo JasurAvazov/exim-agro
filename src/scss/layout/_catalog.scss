@@ -112,6 +112,7 @@
         z-index: 160;
         justify-content: center;
         align-items: center;
+        padding: 15px;
         &.active{
             display: flex;
         }
@@ -134,10 +135,18 @@
             align-items: flex-start;
             gap: 20px;
             border-radius: 8px;
+            @include media (992) {
+                max-width: 700px;
+            }
+            @include media (768) {
+                max-width: 400px;
+                flex-direction: column;
+            }
         }
         &-img{
-            width: 300px;
-            height: 300px;
+            max-width: 300px;
+            width: 100%;
+            aspect-ratio: 1/1;
             border-radius: 8px;
             img{
                 width: 100%;
