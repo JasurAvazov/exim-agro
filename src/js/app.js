@@ -2,6 +2,7 @@ import * as functions from "./modules/functions.js";
 import * as swiper from "./modules/swiper.js";
 import * as wrapper from "./modules/wrapper.js";
 import * as burger from "./modules/burger.js";
+import * as modal from "./modules/modal.js";
 import SmoothScroll from "smoothscroll-for-websites";
 
 SmoothScroll({
@@ -16,3 +17,4 @@ functions.isWebp();
 swiper.init();
 wrapper.init();
 burger.init();
+modal.init();

@@ -1,6 +1,15 @@
 mixin catalog()
     section.catalog#catalog
         .container
+            .catalog__modal
+                .catalog__modal-bg.catalog__modal-toggle
+                .catalog__modal__inner
+                    button(type="button").catalog__modal-close.catalog__modal-toggle x
+                    .catalog__modal-img 
+                        img(src="" alt="" draggable="false")
+                    .catalog__modal-text 
+                        h4.catalog__modal-title
+                        p.catalog__modal-info
             h2.catalog-title Каталог
             .catalog__tabs
                 button(type="button" value="1").catalog__tabs-btn.active Свежие фрукты, виноград, бахча
@@ -9,115 +18,142 @@ mixin catalog()
                 button(type="button" value="4").catalog__tabs-btn Орехи
                 button(type="button" value="5").catalog__tabs-btn Сублимированные продукты
             .catalog__wrapper.active#catalog1
-                a(href="#").catalog__wrapper-card
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
-                    h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
+                    h4.catalog__wrapper-title не Кабачки
+                    p не классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
+                    p классные
             .catalog__wrapper#catalog2
-                a(href="#").catalog__wrapper-card
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
+                    p классные
             .catalog__wrapper#catalog3
-                a(href="#").catalog__wrapper-card
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
+                    p классные
             .catalog__wrapper#catalog4
-                a(href="#").catalog__wrapper-card
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
+                    p классные
             .catalog__wrapper#catalog5
-                a(href="#").catalog__wrapper-card
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
-                a(href="#").catalog__wrapper-card
+                    p классные
+                button(type="button").catalog__wrapper-card
                     .catalog__wrapper-img
-                        img(src="@img/catalog/1.jpg", alt="" draggable="false")
+                        img(src="@img/catalog/1.jpg" alt="" draggable="false")
                     h4.catalog__wrapper-title Кабачки
+                    p классные

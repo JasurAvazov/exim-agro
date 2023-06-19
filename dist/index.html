@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230617152125">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230619205049">
     <title>EximAgro</title>
   </head>
   <body> 
@@ -68,6 +68,17 @@
     </section>
     <section class="catalog" id="catalog">
       <div class="container">
+        <div class="catalog__modal">
+          <div class="catalog__modal-bg catalog__modal-toggle"></div>
+          <div class="catalog__modal__inner">
+            <button class="catalog__modal-close catalog__modal-toggle" type="button">x</button>
+            <div class="catalog__modal-img"> <img src="" alt="" draggable="false"/></div>
+            <div class="catalog__modal-text"> 
+              <h4 class="catalog__modal-title"></h4>
+              <p class="catalog__modal-info"></p>
+            </div>
+          </div>
+        </div>
         <h2 class="catalog-title">Каталог</h2>
         <div class="catalog__tabs">
           <button class="catalog__tabs-btn active" type="button" value="1">Свежие фрукты, виноград, бахча</button>
@@ -76,65 +87,151 @@
           <button class="catalog__tabs-btn" type="button" value="4">Орехи</button>
           <button class="catalog__tabs-btn" type="button" value="5">Сублимированные продукты</button>
         </div>
-        <div class="catalog__wrapper active" id="catalog1"><a class="catalog__wrapper-card" href="#">
+        <div class="catalog__wrapper active" id="catalog1">
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">не Кабачки</h4>
+            <p>не классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a></div>
-        <div class="catalog__wrapper" id="catalog2"><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+        </div>
+        <div class="catalog__wrapper" id="catalog2">
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a></div>
-        <div class="catalog__wrapper" id="catalog3"><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+        </div>
+        <div class="catalog__wrapper" id="catalog3">
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a></div>
-        <div class="catalog__wrapper" id="catalog4"><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+        </div>
+        <div class="catalog__wrapper" id="catalog4">
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a></div>
-        <div class="catalog__wrapper" id="catalog5"><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+        </div>
+        <div class="catalog__wrapper" id="catalog5">
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a><a class="catalog__wrapper-card" href="#">
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+          <button class="catalog__wrapper-card" type="button">
             <div class="catalog__wrapper-img"><picture><source srcset="img/catalog/1.webp" type="image/webp"><img src="img/catalog/1.jpg" alt="" draggable="false"/></picture></div>
-            <h4 class="catalog__wrapper-title">Кабачки</h4></a></div>
+            <h4 class="catalog__wrapper-title">Кабачки</h4>
+            <p>классные</p>
+          </button>
+        </div>
       </div>
     </section>
     <section class="advantages" id="advantages">
@@ -303,6 +400,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/app.min.js?_v=20230617152125"> </script>
+    <script src="js/app.min.js?_v=20230619205049"> </script>
   </body>
 </html>
