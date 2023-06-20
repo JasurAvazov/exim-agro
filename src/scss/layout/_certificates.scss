@@ -19,6 +19,10 @@
         align-items: flex-end;
         gap: 30px;
         overflow: visible;
+        &-wrapper{
+            display: flex;
+            align-items: center;
+        }
         &-button{
             width: 200px;
             height: 44px;
